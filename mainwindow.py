@@ -268,4 +268,5 @@ class MainWindow(QMainWindow):
             particula.destino_y)
          
         self.grafo.Mostrargrafo()
+        self.ui.salida.clear()
         self.ui.salida.insertPlainText(str(pformat(self.grafo.Grafo, width=40, indent=1)))
